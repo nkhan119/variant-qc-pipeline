@@ -3,7 +3,6 @@
 [![Nextflow](https://img.shields.io/badge/nextflow-≥23.04-brightgreen.svg)](https://www.nextflow.io/)
 [![DSL2](https://img.shields.io/badge/DSL-2-blue.svg)](https://www.nextflow.io/docs/latest/dsl2.html)
 [![Conda](https://img.shields.io/badge/conda-compatible-44A833.svg)](https://conda.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > A reproducible, performance-optimised Nextflow DSL2 pipeline for **SNV and CNV variant analysis** from gVCF cohorts, with MultiQC quality control, interactive **Plotly** HTML reports, and per-cohort PDF summaries.
 
@@ -334,10 +333,7 @@ All jobs auto-retry (up to 2×) on memory/OOM exit codes (104, 134, 137, 139, 14
 ---
 
 ## Citation / Reuse
-
 If you use or adapt this pipeline, please credit the author.
 
-##Author
-
+## Author
 Nadeem Khan, PhD Bioinformatician — INRS–Centre Armand-Frappier Santé-Biotechnologie, Laval, QC, Canada nkhan119@uottawa.ca @nkhan119
-
