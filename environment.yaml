@@ -1,0 +1,32 @@
+name: variant-qc-pipeline
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # language
+  - python=3.11
+  # Nextflow
+  - nextflow>=23.04
+  # tools
+  - bcftools>=1.17
+  - htslib>=1.17
+  - samtools>=1.17
+  - multiqc>=1.16
+  # Python data stack
+  - pandas>=2.0
+  - numpy>=1.24
+  - scipy>=1.11
+  - pyarrow>=12.0
+  - scikit-learn>=1.3.0
+  # Visualisation
+  - matplotlib>=3.7
+  - seaborn>=0.12
+  - plotly>=5.15
+  # Reports
+  - jinja2>=3.1
+  - weasyprint>=59.0
+  - openpyxl>=3.1
+  - pip
+  - pip:
+    - reportlab>=4.0

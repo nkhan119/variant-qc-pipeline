@@ -1,0 +1,36 @@
+# Nextflow work and cache directories
+work/
+.nextflow/
+.nextflow.log*
+.nextflow.pid
+
+# Results (Ignore heavy data)
+results/**/*.vcf.gz
+results/**/*.vcf.gz.tbi
+results/**/*.gvcf.gz
+results/**/*.gvcf.gz.tbi
+results/**/*.bam
+results/**/*.bam.bai
+results/**/*.depth.tsv
+results/**/*.roh.tsv
+
+# Keep summaries for GitHub tracking
+!results/**/*.parquet
+!results/**/*.html
+!results/**/*.pdf
+!results/**/*.tsv
+!results/**/*.stats
+
+# Ignore Input Data Folders
+Cohort_*/
+*.gvcf.gz
+*.tbi
+metadata.tsv
+
+# Python / System
+__pycache__/
+*.py[cod]
+.DS_Store
+logs/
+slurm-*.out
+slurm-*.err
