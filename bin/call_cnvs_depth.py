@@ -1,19 +1,7 @@
 #!/usr/bin/env python3
 """
 call_cnvs_depth.py
-------------------
-Depth-based CNV detection from per-site DP values extracted from a gVCF.
 
-Algorithm:
-  1. Bin the genome into windows of --bin-size bp
-  2. Compute median depth per bin
-  3. Normalise by genome-wide median → log2 ratio
-  4. Call gains (log2R > 0.58) and losses (log2R < -1.0) that span ≥ --min-size bp
-  5. Merge adjacent bins of the same call type
-  6. Append ROH segments (homozygous deletions) from bcftools roh output
-
-Output: BED-like TSV with columns:
-    CHROM  START  END  TYPE  LOG2R  N_BINS  SIZE  SAMPLE
 """
 
 import argparse
