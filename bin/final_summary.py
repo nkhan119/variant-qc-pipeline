@@ -3,7 +3,6 @@
 final_summary.py
 ----------------
 Merges per-cohort parquets into a cross-cohort summary.
-GUARANTEED OUTPUT: Always creates all expected files to satisfy Nextflow.
 """
 
 import argparse
