@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 """
 annotate_snvs.py
-----------------
-Reads bcftools query output from stdin, adds computed fields,
-and writes an enriched TSV to stdout.
-
-Added columns:
-  SAMPLE, COHORT, VARIANT_TYPE, SNV_CLASS (ts/tv/indel),
-  AF_APPROX (from AD), HET_FLAG, PASS_FLAG, CHROM_TYPE
 """
 
 import argparse
