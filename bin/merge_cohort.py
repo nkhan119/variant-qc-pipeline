@@ -2,17 +2,7 @@
 """
 merge_cohort.py
 ---------------
-Merge all per-sample annotated SNV TSVs and CNV BED files into
-cohort-wide compressed TSVs, joined with sample metadata.
 
-Usage (called from Nextflow):
-    python3 merge_cohort.py \\
-        --cohort   Cohort_A \\
-        --snv-dir  . \\
-        --cnv-dir  . \\
-        --metadata metadata.tsv \\
-        --out-snv  Cohort_A_snv_merged.tsv.gz \\
-        --out-cnv  Cohort_A_cnv_merged.tsv.gz
 """
 
 import argparse
